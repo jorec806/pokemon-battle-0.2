@@ -1,0 +1,235 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 100vh;
+    margin: 0;
+  }
+
+.main_container {
+    height: 600px;
+    width: 600px;
+    background-image: url(image/backg.jpeg);
+    background-size: cover;
+}
+
+.display-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 400px; /* Ancho deseado para div2 */
+    height: 400px; /* Altura deseada para div2 */
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display-container-start{
+    opacity: 1; 
+} 
+
+.display-container-end{
+    opacity: 0;
+}
+
+.select-pokemon{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choose-pkmn{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.articuno {
+    background-image: url(image/articuno-galar-front.gif);
+}
+
+.charizard {
+    background-image: url(image/charizard-front.gif);
+}
+
+.volcarona {
+    background-image: url(image/volcarona-front.gif);
+}
+
+.hydreigon {
+    background-image: url(image/hydreigon-front.gif);
+}
+
+.rillaboom {
+    background-image: url(image/rillaboom-front.gif);
+}
+
+.cinderace {
+    background-image: url(image/cinderace-front.gif);
+}
+
+.inteleon {
+    background-image: url(image/inteleon-front.gif);
+}
+
+.reuniclus {
+    background-image: url(image/reuniclus-front.gif);
+}
+
+.text {
+    padding: 0px 30px 0px 30px;
+    margin: 0px;
+    color: aliceblue;
+    text-shadow: 0 0 3px #000000;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.opponent_main {
+    height: 300px;
+    width: 600px;
+    display: flex;
+}
+
+.opponent_info, .player_info {
+    width: 300px;
+    height: 70px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.opponent_name, .player_name{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opponent_life, .player_life {
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opponent_hpbar, .player_hpbar{
+    width: 220px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    border: solid gray 2px;
+    border-radius: 5px;
+}
+
+.opponent_hp, .player_hp{
+    width: 70.458%;
+    height: 100%;
+    background-color: #4AFF14;
+    transition: width 2s;
+}
+
+.opponent_img {
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opponent_pkmn {
+    height: 180px;
+    width: 180px;
+    margin-top: 40%;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.opponent_data {
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+    width: 300px;
+}
+
+.player_main {
+    height: 300px;
+    width: 600px;
+    display: flex;
+}
+
+.player_img {
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_data{
+    padding-top: 70px;
+}
+
+.player_pkmn {
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+    width: 300px;
+    background-size: 300px;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.player_moves{
+    width: 300px;
+    height: 120px;
+    display: none; /* luego se cambia a (None/flex)*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_script{
+    width: 270px;
+    height: 100px;
+    background-color: #eaeaec;
+    border-radius: 5px;
+    padding: 13px;
+    display: none; /* Luego cambia a (None/flex)*/
+}
+
+.texto_caja{
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    white-space: pre-line;
+
+}
+
+.move {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
